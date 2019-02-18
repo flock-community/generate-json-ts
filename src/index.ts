@@ -33,7 +33,6 @@ export function generateJsonModel(file:string, outputDir:string){
 
 
     return schemaCompiler.compile(schema, name).then((ts: string) => {
-        console.log(ts)
         return mkdirp(dir, () => {
             return fs.writeFileSync(`${outputDir}/${file}.d.ts`, ts)
         })
