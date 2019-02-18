@@ -1,0 +1,42 @@
+{
+  "name": "generate-json-ts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "module": "./lib/index.js",
+  "bin": {
+    "jsonmodel2ts": "bin/jsonmodel2ts",
+    "jsonschema2ts": "bin/jsonschema2ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "glob": "latest",
+    "json-schema-to-typescript": "^6.1.1",
+    "jsonmodels": "^0.1.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "mocha": "^5",
+    "nyc": "^13",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  }
+}
